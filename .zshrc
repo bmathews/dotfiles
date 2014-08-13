@@ -70,4 +70,4 @@ fi
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 alias ls='ls -GFha1'
-alias e='sublime -w $1'
+alias e='open -a "Sublime Text" $1'
