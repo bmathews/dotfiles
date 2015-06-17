@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -69,5 +69,10 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+export GOPATH=$HOME/go
+export ANDROID_HOME=/Users/brianmathews/Library/Android/sdk
+
 alias ls='ls -GFha1'
+alias gulp='node --harmony /usr/local/bin/gulp'
 alias e='open -a "Sublime Text" $1'
+alias internet="sudo ifconfig en0 down && sudo ifconfig en0 up"
